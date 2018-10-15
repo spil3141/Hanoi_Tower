@@ -12,7 +12,7 @@ void Logo()
 /***************************************Help Option*******************************************************/
 void help()
 {
-	system("cls");
+	system("clear");
 	printf("Welcome to The hanoi Towel!\nObjective:\n1. Move the disks from the first bar to the third bar\n2. Dont not place a bigger disk over a smaller disk.");
 	//system("pause");
 	int i;
@@ -957,13 +957,13 @@ void Gameplay()
 	Interface();                                    //Interface declaration ??
 	while (loopdisplay)
 	{
-		system("cls");
+		system("clear");
 		Pointer();
 		Display_disk();
 		display_interface();
 		printf("\t\t_______LEFT < RIGHT > SELECT \\/ __________\n");
 		printf("Move:%d\n",Moves);
-		input = _getch();
+		input = getch();
 		switch (input)
 		{
 		case 'K':                                        // Left
@@ -978,7 +978,7 @@ void Gameplay()
 		//Game Over
 		if (Interface_object[0][2] == 3 && Interface_object[1][2] == 5 && Interface_object[2][2] == 7 && Interface_object[3][2] == 9)
 		{
-			system("cls");
+			system("clear");
 			printf("YOU WON with %d Moves!!! \n",Moves);
 			printf("Thanks for Playing :)\n");
 			END = 1;

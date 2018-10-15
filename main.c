@@ -1,8 +1,11 @@
 //*******************************/*Libraries*/*****************************************************************************//                                  
-#include<stdio.h> #include <stdlib.h> #include<String.h> #include <conio.h> 
+#include<stdio.h> 
+#include <stdlib.h>
+#include <string.h>
 #include "Declarations.h" 
 #include "Functions.h"
 //**************************************************************************************************************************//
+//********************   getch() Decleration ********
 
 //************************************ERROR **********************************************/
 // The logic behind the placement of big over small need to be examine .. 
@@ -15,11 +18,11 @@ void main(void)
 {
 	int option;
 	do {
-		system("cls");
+		system("clear");
 		Logo();
 		printf("\t\t\t\tBy spil\n");
 		printf("\n\n\t\t\t1. Play Game\n\t\t\t2.Help/How to play\n\t\t\t3.Quit\nOption:_\b");
-		scanf_s("%d", &option);
+		scanf("%d", &option);
 		switch (option)
 		{
 		case 1:
@@ -33,17 +36,6 @@ void main(void)
 			break;
 		}
 	} while (END ==0);
-	for (i = 0; i < 1000000000; i++);
+	if (END != 1) for (i = 0; i < 1000000000; i++);
 }
 //**************************************************************************************//
-
-
-
-
-
-
-
-
-//******************************
-
-
