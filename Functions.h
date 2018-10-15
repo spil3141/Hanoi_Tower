@@ -966,13 +966,13 @@ void Gameplay()
 		input = getch();
 		switch (input)
 		{
-		case 27:                                        // Left
+		case 'a':                                        // Left
 			if (p_pos<21) p_pos += 11; p_pos -= 11;
 			Pointer_movement(); break;
-		case -27:                                        // Right
+		case 'd':                                        // Right
 			if (p_pos>21) p_pos -= 11; p_pos += 11;
 			Pointer_movement(); break;
-		case 'P':                                         // Down ( Being use as select ) 
+		case 's':                                         // Down ( Being use as select ) 
 			click_select(); break;
 		}
 		//Game Over
